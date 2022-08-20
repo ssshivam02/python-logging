@@ -1,0 +1,107 @@
+2022-08-20 18:57:22,725 Started server process [9716]
+2022-08-20 18:57:22,728 Waiting for application startup.
+2022-08-20 18:57:22,729 Application startup complete.
+2022-08-20 18:57:51,502 Started server process [13716]
+2022-08-20 18:57:51,502 Waiting for application startup.
+2022-08-20 18:57:51,508 Application startup complete.
+2022-08-20 18:58:19,319 GET /foo
+2022-08-20 18:58:58,276 Started server process [15064]
+2022-08-20 18:58:58,281 Waiting for application startup.
+2022-08-20 18:58:58,282 Application startup complete.
+2022-08-20 18:59:06,894 Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\.\app.py", line 28, in foo
+    logger.info('GET ' + request.url, extra={'extra_info': get_extra_info(request)})
+TypeError: can only concatenate str (not "URL") to str
+2022-08-20 18:59:47,099 Started server process [17024]
+2022-08-20 18:59:47,100 Waiting for application startup.
+2022-08-20 18:59:47,102 Application startup complete.
+2022-08-20 18:59:51,692 Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 372, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\venv\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\Users\Shivam\OneDrive\logging-fastapi\.\app.py", line 28, in foo
+    logger.info('GET ' + {request.url}, extra={'extra_info': get_extra_info(request)})
+TypeError: unhashable type: 'URL'
+2022-08-20 19:00:23,100 Started server process [17296]
+2022-08-20 19:00:23,101 Waiting for application startup.
+2022-08-20 19:00:23,102 Application startup complete.
+2022-08-20 19:00:28,966 GET /foo
+2022-08-20 19:23:55,480 Started server process [9572]
+2022-08-20 19:23:55,505 Waiting for application startup.
+2022-08-20 19:23:55,510 Application startup complete.
+2022-08-20 19:24:05,654 GET /foo

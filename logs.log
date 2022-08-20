@@ -1,0 +1,4 @@
+08-20-2022 19:23:55 | INFO | Started server process [9572]
+08-20-2022 19:23:55 | INFO | Waiting for application startup.
+08-20-2022 19:23:55 | INFO | Application startup complete.
+08-20-2022 19:24:05 | INFO | GET /foo

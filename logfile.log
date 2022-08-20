@@ -1,0 +1,147 @@
+{
+  "XYZ": {
+    "log": {
+      "level": "INFO",
+      "type": "access",
+      "timestamp": "2022-08-20 18:41:50,899",
+      "message": "GET /foo"
+    },
+    "req": {
+      "url": "/foo",
+      "headers": {
+        "host": "127.0.0.1:8000",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "accept": "*/*"
+      },
+      "method": "GET",
+      "httpVersion": "1.1",
+      "originalUrl": "/foo",
+      "query": {}
+    },
+    "res": {
+      "statusCode": 200,
+      "body": {
+        "statusCode": 200,
+        "status": "OK"
+      }
+    }
+  }
+}
+{
+  "XYZ": {
+    "log": {
+      "level": "INFO",
+      "type": "access",
+      "timestamp": "2022-08-20 18:43:24,124",
+      "message": "GET /foo"
+    },
+    "req": {
+      "url": "/foo",
+      "headers": {
+        "host": "127.0.0.1:8000",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "accept": "*/*"
+      },
+      "method": "GET",
+      "httpVersion": "1.1",
+      "originalUrl": "/foo",
+      "query": {}
+    },
+    "res": {
+      "statusCode": 200,
+      "body": {
+        "statusCode": 200,
+        "status": "OK"
+      }
+    }
+  }
+}
+{
+  "XYZ": {
+    "log": {
+      "level": "INFO",
+      "type": "access",
+      "timestamp": "2022-08-20 18:58:19,319",
+      "message": "GET /foo"
+    },
+    "req": {
+      "url": "/foo",
+      "headers": {
+        "host": "127.0.0.1:8000",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "accept": "*/*"
+      },
+      "method": "GET",
+      "httpVersion": "1.1",
+      "originalUrl": "/foo",
+      "query": {}
+    },
+    "res": {
+      "statusCode": 200,
+      "body": {
+        "statusCode": 200,
+        "status": "OK"
+      }
+    }
+  }
+}
+{
+  "XYZ": {
+    "log": {
+      "level": "INFO",
+      "type": "access",
+      "timestamp": "2022-08-20 19:00:28,966",
+      "message": "GET /foo"
+    },
+    "req": {
+      "url": "/foo",
+      "headers": {
+        "host": "127.0.0.1:8000",
+        "user-agent": "PostmanRuntime/7.29.2",
+        "accept": "*/*"
+      },
+      "method": "GET",
+      "httpVersion": "1.1",
+      "originalUrl": "/foo",
+      "query": {}
+    },
+    "res": {
+      "statusCode": 200,
+      "body": {
+        "statusCode": 200,
+        "status": "OK"
+      }
+    }
+  }
+}
+[
+  {
+    "XYZ": {
+      "log": {
+        "level": "INFO",
+        "type": "access",
+        "timestamp": "2022-08-20 19:24:05,654",
+        "message": "GET /foo"
+      },
+      "req": {
+        "url": "/foo",
+        "headers": {
+          "host": "127.0.0.1:8000",
+          "user-agent": "PostmanRuntime/7.29.2",
+          "accept": "*/*"
+        },
+        "method": "GET",
+        "httpVersion": "1.1",
+        "originalUrl": "/foo",
+        "query": {}
+      },
+      "res": {
+        "statusCode": 200,
+        "body": {
+          "statusCode": 200,
+          "status": "OK"
+        }
+      }
+    }
+  }
+]
