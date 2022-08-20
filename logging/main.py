@@ -14,3 +14,9 @@ datefmt='%m/%d/%y %H:%M:%S')
 # 08/20/22 23:54:32 - root - ERROR - this is error
 # 08/20/22 23:54:32 - root - CRITICAL - this is critical
 import helper
+# output
+# 08/20/22 23:59:54 - helper - DEBUG - this is debug
+# 08/20/22 23:59:54 - helper - INFO - this is info
+# 08/20/22 23:59:54 - helper - WARNING - this waring
+# 08/20/22 23:59:54 - helper - ERROR - this is error
+# 08/20/22 23:59:54 - helper - CRITICAL - this is critical
